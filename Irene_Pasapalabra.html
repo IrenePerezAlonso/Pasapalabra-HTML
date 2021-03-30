@@ -1,0 +1,107 @@
+<!-- PASAPALABRA HTML -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Encabezado -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Irene_Pasapalabra.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,400,600,900">
+    <title>Pasapalabra</title>
+  </head>
+  <!-- Cuerpo del código -->
+  <body>
+      <!-- Bloque que agrupará todo el cuerpo -->
+    <section class="container">
+      <!-- Listado de las normas -->
+      <div class="title"><h3>✪ PASAPALABRA SKYLAB ✪</h3></div>
+      <ul class="rules hidden" id="rules">
+        <p>Las normas son las siguientes:</p>
+        <li>Por cada una de las letras se irán mostrando definiciones en pantalla y el jugador deberá contestar con aquella palabra que piense que es la correcta.</li>
+        <li>Las palabras se deberán escribir SIN TILDE.</li>
+      </ul>
+      <form class="welcome" id="welcome">
+        <p class="phrase" id="phrase">¡Bienvenid@ al Pasapalabra Skylab!</p>
+        <input name="username" class="username" id="usernamescreen" autocomplete="off" placeholder="Escriba su nombre de usuario aquí">
+        <button type="submit" id="submit">Enviar</button>
+      </form>
+      <!-- Bloque de las letras -->
+      <div class = "gameblock hidden" id = "gameblock">
+        <div class="container-letters" id="letters">
+          <span class="a">A</span>
+          <span class='b'>B</span>
+          <span class='c'>C</span>
+          <span class='d'>D</span>
+          <span class='e'>E</span>
+          <span class='f'>F</span>
+          <span class='g'>G</span>
+          <span class='h'>H</span>
+          <span class='i'>I</span>
+          <span class='j'>J</span>
+          <span class='k'>K</span>
+          <span class='l'>L</span>
+          <span class='m'>M</span>
+          <span class='n'>N</span>
+          <span class='ñ'>Ñ</span>
+          <span class='o'>O</span>
+          <span class='p'>P</span>
+          <span class='q'>Q</span>
+          <span class='r'>R</span>
+          <span class='s'>S</span>
+          <span class='t'>T</span>
+          <span class='u'>U</span>
+          <span class='v'>V</span>
+          <span class='w'>W</span>
+          <span class='x'>X</span>
+          <span class='y'>Y</span>
+          <span class='z'>Z</span>
+          <div class="timer">
+            <p id="temp">Tiempo restante:</p><span id="seconds">300</span></h3>
+          </div>
+        </div>
+        <!-- Bloque preguntas -->
+        <div class="playerspace" id="playerspace">
+
+          <div class="definitions">
+            <h4 class="question" id="question">Aquí aparecerán las definiciones de cada letra.</h4>
+          </div>
+
+          <div class="user-interface">
+            <div class="endgame">
+              <div class="button hidden" id="playAgain">reiniciar</div>
+              <div class="button hidden" id="theEnd">Finalizar Juego</div>
+            </div>
+
+            <div class="ingame">
+              <div class= "button play" id="play">Jugar</div>
+              <input class="answer hidden" id="answer" autocomplete="off" placeholder="Escriba su respuesta aquí">
+              <br>
+              <br>
+              <br>
+              <div class="button hidden" id="sendAnswer">Enviar</div>
+              <div class="button hidden" id="pasapalabra">Pasapalabra</div>
+            </div>
+
+          </div>
+
+          <div class="score">
+            <h4>Total aciertos:<span id="pointsShow">0</span></h4>
+          </div>
+
+        </div>
+        
+      </div>
+      <div class="ranking hidden" id="ranking">
+        <p class="ranking title" id="rankingTitle">Ranking</p>
+        <ul id="rankingTable">
+        </ul>
+      </div>
+    </section>
+
+  <footer>Copyright &copy; Irene Pérez Alonso for SkyLabCode</footer>
+
+  <script src="./Irene_Pasapalabra.js"></script>
+  
+  </body>
+</html>
